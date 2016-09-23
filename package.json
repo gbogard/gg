@@ -1,0 +1,19 @@
+{
+  "name": "gg",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "gg": "./index.js"
+  },
+  "dependencies": {
+    "exec": "^0.2.1",
+    "figlet": "^1.1.2",
+    "node-powershell": "^3.0.0"
+  }
+}
