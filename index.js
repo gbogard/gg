@@ -25,12 +25,14 @@ var playRandomCheer = function () {
 
 exec(fullCommand, function (err, out, code) {
   if (err) {
+    console.log(err);
     process.stdout.write(err);
     process.exit(code);
   }
   else {
     console.log('ok');
     if (arguments[0] === 'push') {
+      console.log('ok');
       multiLineText('Congrats!!');
         multiLineText('You are fucking awesome!', {
           font: 'mini',
@@ -44,6 +46,7 @@ exec(fullCommand, function (err, out, code) {
       });
     }
     else {
+      console.log('not push');
       process.stdout.write(out);
       process.exit(code);
     }
