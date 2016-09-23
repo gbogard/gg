@@ -43,7 +43,6 @@ exec(fullCommand, function (err, out, code) {
       });
     }
     else {
-      console.log('not push');
       process.stdout.write(out);
       process.exit(code);
     }
