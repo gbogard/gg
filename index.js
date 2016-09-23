@@ -43,6 +43,7 @@ exec(fullCommand, function (err, out, code) {
       });
     }
     else {
+      process.stdout.write(out);
       process.exit(code);
     }
   }
