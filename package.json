@@ -1,6 +1,6 @@
 {
   "name": "grateful-git",
-  "version": "1.0.0",
+  "version": "0.5.0",
   "description": "Get cheered each time you successfully push your commits.",
   "author": "",
   "license": "MIT",
@@ -14,4 +14,3 @@
     "node-powershell": "^3.0.0"
   }
 }
-grateful-git
