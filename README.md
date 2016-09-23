@@ -18,7 +18,7 @@ gg command // gg push, gg pull, gg checkout ...
  Install the package globally using npm. Make sure your npm global folder is in your system PATH.
  
 ``` javascript
-npm install grateful-git
+npm install -g grateful-git
 ```
  The `gg` command shoul now be available.
  
