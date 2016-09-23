@@ -6,12 +6,12 @@ var multiLineText = require('./lib/multiLineText');
 var playSound = require('./lib/playSound');
 
 var ggPath = path.dirname(process.argv[1]);
-var arguments = process.argv.slice(2);
+var args = process.argv.slice(2);
 var fullCommand = (function (arguments) {
   var newArray = arguments.slice(0);
   newArray.unshift('git');
   return newArray;
-})(arguments);
+})(args);
 
 var playRandomCheer = function () {
   var cheers = [
@@ -24,24 +24,21 @@ var playRandomCheer = function () {
 }
 
 exec(fullCommand, function (err, out, code) {
-  if (err) {
-    console.log(err);
+  if (err instanceof Error) {
     process.stdout.write(err);
     process.exit(code);
   }
   else {
-    console.log('ok');
-    if (arguments[0] === 'push') {
-      console.log('ok');
+    if (args[0] === 'push') {
       multiLineText('Congrats!!');
         multiLineText('You are fucking awesome!', {
           font: 'mini',
         });
-      playRandomCheer().then(function () {
+        process.stdout.write(err);
         process.stdout.write(out);
+      playRandomCheer().then(function () {
         process.exit(code);
       }, function () {
-        process.stdout.write(out);
         process.exit(code);
       });
     }
