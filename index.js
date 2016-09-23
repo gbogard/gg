@@ -29,6 +29,7 @@ exec(fullCommand, function (err, out, code) {
     process.exit(code);
   }
   else {
+    console.log('ok');
     if (arguments[0] === 'push') {
       multiLineText('Congrats!!');
         multiLineText('You are fucking awesome!', {
