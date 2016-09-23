@@ -13,7 +13,7 @@ gg command // gg push, gg pull, gg checkout ...
 ```
  When a `gg push` command succeeds, you will get congratulations, and you will be cheered by an enthusiastic crowd, like you truly deserve. (Sound currently working on windows only).
  
- ## Installation
+## Installation
  
  Install the package globally using npm. Make sure your npm global folder is in your system PATH.
  
@@ -22,7 +22,7 @@ npm install -g grateful-git
 ```
  The `gg` command shoul now be available.
  
- ## Roadmap
+## Roadmap
  
  * Make the sound player work on windows
  * Add more behaviors depending on the command / result.
