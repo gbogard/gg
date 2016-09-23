@@ -1,12 +1,9 @@
 {
-  "name": "gg",
+  "name": "grateful-git",
   "version": "1.0.0",
-  "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Get cheered each time you successfully push your commits.",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "preferGlobal": true,
   "bin": {
     "gg": "./index.js"
@@ -17,3 +14,4 @@
     "node-powershell": "^3.0.0"
   }
 }
+grateful-git
