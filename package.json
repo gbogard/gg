@@ -2,7 +2,20 @@
   "name": "grateful-git",
   "version": "0.5.0",
   "description": "Get cheered each time you successfully push your commits.",
-  "author": "",
+  "keywords": [
+    "git",
+    "cli",
+    "fun"
+  ],
+  "author": {
+    "name": "Guillaume B.",
+    "email": "bogardguillaume@gmail.com",
+    "url": "http://guillaumebogard.me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gouyou88/gg.git"
+  },
   "license": "MIT",
   "preferGlobal": true,
   "bin": {
