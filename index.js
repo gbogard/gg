@@ -24,7 +24,7 @@ var playRandomCheer = function () {
 }
 
 exec(fullCommand, function (err, out, code) {
-  if (err instanceof Error || out.match(/error/) || err.match(/error/)) {
+  if (err instanceof Error || out.match(/error|fatal/) || err.match(/error|fatal/)) {
     process.stdout.write(err);
     process.exit(code);
   }
